@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">ActionBarViewPagerHeader</string>
+	<string name="go_forward">Go forward</string>
+	<string name="go_backward">Go backward</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clipChildren="false"
+		android:orientation="horizontal">
+	
+	<ImageButton
+			android:id="@+id/actionbar_go_backward_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:contentDescription="@string/go_backward"
+			android:padding="@dimen/actionBarButtonsPadding"
+			app:srcCompat="@drawable/ic_chevron_left_white_24dp" />
+	
+	<FrameLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:clipChildren="false">
+		
+		<LinearLayout
+				android:id="@+id/actionbar_title_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="?attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:focusable="true"
+				android:orientation="vertical"
+				android:paddingStart="@dimen/actionBarTitlePadding"
+				android:paddingLeft="@dimen/actionBarTitlePadding"
+				android:paddingEnd="@dimen/actionBarTitlePadding"
+				android:paddingRight="@dimen/actionBarTitlePadding">
+			
+			<TextView
+					android:id="@+id/actionbar_title"
+					style="?attr/actionBarTitleStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					tools:text="Title" />
+			
+			<TextView
+					android:id="@+id/actionbar_subtitle"
+					style="?attr/actionBarSubtitleStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					tools:text="Subtitle" />
+		</LinearLayout>
+		
+		<LinearLayout
+				android:id="@+id/actionbar_next_title_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:orientation="vertical"
+				android:visibility="gone">
+			
+			<TextView
+					android:id="@+id/actionbar_next_title"
+					style="?attr/actionBarTitleStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center" />
+			
+			<TextView
+					android:id="@+id/actionbar_next_subtitle"
+					style="?attr/actionBarSubtitleStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center" />
+		</LinearLayout>
+	</FrameLayout>
+	
+	<ImageButton
+			android:id="@+id/actionbar_go_forward_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:contentDescription="@string/go_forward"
+			android:padding="@dimen/actionBarButtonsPadding"
+			app:srcCompat="@drawable/ic_chevron_right_white_24dp" />
+</LinearLayout>
